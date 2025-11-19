@@ -1,3 +1,5 @@
+// src/i18n.jsx
+
 import { createContext, useContext, useEffect, useState } from 'react';
 
 const translations = {
@@ -5,6 +7,7 @@ const translations = {
     // navbar
     'nav.home': 'Accueil',
     'nav.projects': 'Projets',
+    'nav.certifications': 'Certifications',
     'nav.studies': 'Études',
     'nav.contact': 'Contact',
 
@@ -15,7 +18,7 @@ const translations = {
       "Étudiant en Master réseaux et cybersécurité, je travaille sur des projets concrets allant du bas niveau réseau à l'automatisation.",
     'hero.viewProjects': 'Voir les projets',
     'hero.contactMe': 'Me contacter',
-    'hero.downloadCv': 'Télécharger mon CV', 
+    'hero.downloadCv': 'Télécharger mon CV',
     'hero.currentlyTitle': 'Actuellement',
     'hero.currentlyBody':
       'Master 1 – Réseaux (RES) à Sorbonne Université, avec un focus sur la sécurité des réseaux et les systèmes.',
@@ -24,6 +27,12 @@ const translations = {
     'projects.title': 'Projets',
     'projects.intro':
       'Une sélection de projets qui illustrent mon travail en réseaux, automatisation et programmation système.',
+
+    // certifications
+    'certs.title': 'Certifications',
+    'certs.intro':
+      'Certifications et parcours pratiques en cybersécurité, notamment TryHackMe, ainsi que mes futurs certificats.',
+    'certs.view': 'Voir le certificat / profil',
 
     // studies
     'studies.title': 'Études',
@@ -53,6 +62,7 @@ const translations = {
     // navbar
     'nav.home': 'Home',
     'nav.projects': 'Projects',
+    'nav.certifications': 'Certifications',
     'nav.studies': 'Studies',
     'nav.contact': 'Contact',
 
@@ -60,10 +70,10 @@ const translations = {
     'hero.kicker': 'Cybersecurity & Networks',
     'hero.title': 'A EB - Welcome to my portfolio website!',
     'hero.subtitle':
-      "I am a Master student in networks and cybersecurity, working on hands-on projects from low-level networking to automation tools.",
+      'I am a Master student in networks and cybersecurity, working on hands-on projects from low-level networking to automation tools.',
     'hero.viewProjects': 'View projects',
     'hero.contactMe': 'Contact me',
-    'hero.downloadCv': 'Download my CV', 
+    'hero.downloadCv': 'Download my CV',
     'hero.currentlyTitle': 'Currently',
     'hero.currentlyBody':
       'Master 1 – Networks (RES) at Sorbonne Université, focusing on network security and systems.',
@@ -72,6 +82,12 @@ const translations = {
     'projects.title': 'Projects',
     'projects.intro':
       'A selection of projects that showcase my work in networking, automation, and systems programming.',
+
+    // certifications
+    'certs.title': 'Certifications',
+    'certs.intro':
+      'Cybersecurity certifications and hands-on paths such as TryHackMe, plus any future security certificates.',
+    'certs.view': 'View certificate / profile',
 
     // studies
     'studies.title': 'Studies',
@@ -139,4 +155,3 @@ export function useLanguage() {
   }
   return context;
 }
-

@@ -1,8 +1,11 @@
+// src/components/Navbar.jsx
+
 import { useLanguage } from '../i18n.jsx';
 
 const sections = [
   { id: 'home', labelKey: 'nav.home' },
   { id: 'projects', labelKey: 'nav.projects' },
+  { id: 'certifications', labelKey: 'nav.certifications' },
   { id: 'studies', labelKey: 'nav.studies' },
   { id: 'contact', labelKey: 'nav.contact' },
 ];

@@ -1,4 +1,6 @@
 import { useLanguage } from '../i18n.jsx';
+import PasswordFinder from './PasswordFinder.jsx';
+
 
 function Hero() {
   const { t, lang } = useLanguage();
@@ -8,7 +10,9 @@ function Hero() {
       <div className="section-inner hero-inner">
         <div>
           <p className="hero-kicker">{t('hero.kicker')}</p>
-          <h1 className="hero-title">{t('hero.title')}</h1>
+          <div className="hero-title">
+            <PasswordFinder />
+          </div>
           <p className="hero-subtitle">{t('hero.subtitle')}</p>
           <div className="hero-actions">
             <a
@@ -37,5 +41,7 @@ function Hero() {
     </section>
   );
 }
+
+
 
 export default Hero;
