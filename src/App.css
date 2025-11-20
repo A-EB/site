@@ -722,3 +722,16 @@ body {
     max-height: 320px;
   }
 }
+
+.contact-status {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.contact-status--success {
+  color: #bbf7d0;
+}
+
+.contact-status--error {
+  color: #fecaca;
+}

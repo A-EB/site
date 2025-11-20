@@ -7,7 +7,7 @@ export const projects = [
     description:
       'Script that syncs nutritional data from OpenFoodFacts into a Notion database to track macros and meals automatically.',
     links: {
-      github: '#',
+      github: '#', // add your repo URL here when you publish it
       demo: null,
     },
   },
@@ -19,7 +19,7 @@ export const projects = [
     description:
       'High-performance concurrent HashMap implementation with different synchronization strategies and benchmarking.',
     links: {
-      github: '#',
+      github: '#', // add your repo URL here when you publish it
       demo: null,
     },
   },
@@ -65,7 +65,7 @@ export const projects = [
   {
     id: 'gestion-bibliotheque',
     title: 'Library Management – Data Structures',
-    period: '2025',
+    period: '2024',
     stack: ['C', 'Hash Tables', 'Linked Lists'],
     description:
       'Implementation of a small library management system using both singly linked lists and hash tables, with a focus on manipulating these structures and comparing their performance.',
@@ -77,7 +77,7 @@ export const projects = [
   {
     id: 'simulation-joyaux',
     title: 'Jewel Collection Simulation',
-    period: '2025',
+    period: '2024',
     stack: ['Java', 'OOP', 'Simulation'],
     description:
       'Grid-based Java simulation where an agent collects jewels while avoiding guards, with custom exceptions, tests, and object-oriented modeling of the environment.',
@@ -101,7 +101,7 @@ export const projects = [
   {
     id: 'jeu-2048-terminal',
     title: '2048 Terminal Game',
-    period: '2024',
+    period: '2023',
     stack: ['Python', 'Terminal UI'],
     description:
       'Minimal implementation of the 2048 game playable directly in the terminal, handling input, merge logic, and score tracking.',
