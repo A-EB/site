@@ -32,50 +32,6 @@ npm install
 npm run dev
 ```
 
-Build
-
-npm run build
-
-Déploiement
-
-Le site peut être déployé sur :
-
-    Vercel
-
-    Netlify
-
-    GitHub Pages
-
-    Cloudflare Pages
-
-Exemple (GitHub Pages) :
-
-npm run build
-
-Puis pousser le dossier dist/ vers la branche gh-pages ou utiliser une GitHub Action dédiée.
-Structure du projet
-
-src/
-  components/
-  sections/
-  assets/
-  constants/
-  styles/
-  App.jsx
-  main.jsx
-
-public/
-
-Personnalisation
-
-    Modifier les projets dans src/constants/projects.js
-
-    Mettre à jour les liens sociaux dans src/constants/index.js
-
-    Adapter le style dans src/styles/
-
-    Ajouter vos propres animations ou composants dans src/components/
-
 Licence
 
 Projet distribué sous licence MIT.
