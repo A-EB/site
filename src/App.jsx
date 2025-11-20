@@ -1,6 +1,5 @@
 // src/App.jsx
 
-import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectsSection from './components/ProjectsSection';

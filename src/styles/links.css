@@ -1,0 +1,21 @@
+.link {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--accent);
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.15s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}

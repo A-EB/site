@@ -1,0 +1,117 @@
+.cert-slider {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: stretch;
+  gap: 0.9rem;
+}
+
+.cert-viewport {
+  flex: 1;
+  min-height: clamp(320px, 65vh, 520px);
+}
+
+.cert-item-large {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-preview {
+  margin-top: 0.75rem;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+}
+
+.cert-image {
+  width: 100%;
+  max-height: clamp(280px, 60vh, 520px);
+  border-radius: 0.6rem;
+  object-fit: contain;
+}
+
+.cert-link {
+  margin-top: 0.9rem;
+  align-self: flex-start;
+}
+
+.cert-nav {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(51, 65, 85, 0.9);
+  background: rgba(15, 23, 42, 0.95);
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease,
+    transform 0.1s ease, box-shadow 0.1s ease, color 0.15s ease;
+}
+
+.cert-nav:focus {
+  outline: none;
+}
+
+.cert-nav:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.45);
+  outline-offset: 3px;
+}
+
+.cert-nav:hover {
+  background: rgba(15, 23, 42, 1);
+  border-color: rgba(56, 189, 248, 0.7);
+  color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.4);
+}
+
+.cert-index {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.cert-dots {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.cert-dot-btn {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(148, 163, 184, 0.45);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.cert-dot-btn.active {
+  background: var(--accent);
+  transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+  .cert-slider {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cert-nav {
+    align-self: center;
+  }
+
+  .cert-image {
+    max-height: 320px;
+  }
+}
